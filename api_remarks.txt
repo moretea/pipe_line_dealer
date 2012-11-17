@@ -1,0 +1,5 @@
+Improvements for pipelinedeals.com:
+- DELETE returns 200, and empty string. Could it return a valid JSON response?
+- If you try to save an invalid hash, we get a 500. Could this be changed to
+  unprocessable entity, and have the same error format as the other requests?
+- Make it possible to manage custom fields via the API.

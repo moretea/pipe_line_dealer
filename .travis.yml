@@ -1,0 +1,8 @@
+language: ruby
+rvm:
+  - 1.9.2
+  - 1.9.3
+script: bundle exec rspec
+notifications:
+  email:
+    - maarten+pld_travis@moretea.nl
