@@ -6,6 +6,12 @@ Pipe line dealer is client for the [pipe line deals api](http://www.pipelinedeal
 
 This gem is young. If you want to know anything, just send me a message.
 
+# Acceptance specs
+In order to run the acceptance tests agains the actual API, you'll need to provide an API key,
+and set the ```ACCEPTANCE=true``` environmental variable.
+This can be done either by providing it as another environmental variable ```API_KEY=secret```,
+or by adding a file in ```spec/api.key```  with the API key.
+
 # Thanks
 Many thanks to [<img src="http://static-1.cdnhub.nl/images/logo-springest.jpg" alt="Springest">](http://springest.com/), the company where I work, for beeing awesome.
 If you're looking for a [job (In the Netherlands)](http://www.springest.nl/weblog/vacature-ruby-on-rails-developer-in-amsterdam)? They're always interested in good developers.
