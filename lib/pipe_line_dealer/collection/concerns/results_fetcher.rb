@@ -9,7 +9,7 @@ module PipeLineDealer
           @options = options
         end
 
-        def limit 
+        def limit
           options[:limit] || PipeLineDealer::Limits::MAX_RESULTS_PER_PAGE
         end
 

@@ -17,7 +17,7 @@ module PipeLineDealer
         before { subject.field_type = "text" }
 
         it "decodes correctly" do
-          subject.decode(model, "Moehaha").should == "Moehaha" 
+          subject.decode(model, "Moehaha").should == "Moehaha"
         end
       end
 
@@ -31,8 +31,8 @@ module PipeLineDealer
 
       context "dropdown" do
         subject do
-          CustomField.new(attributes: { 
-            "field_type" => "dropdown", 
+          CustomField.new(attributes: {
+            "field_type" => "dropdown",
             "custom_field_label_dropdown_entries" => [{"id" => 123, "value" => "My Item"}]
           })
         end
@@ -44,8 +44,8 @@ module PipeLineDealer
 
       context "multi_select" do
         subject do
-          CustomField.new(attributes: { 
-            "field_type" => "multi_select", 
+          CustomField.new(attributes: {
+            "field_type" => "multi_select",
             "custom_field_label_dropdown_entries" => [{"id" => 123, "value" => "My Item"}]
           })
         end
@@ -77,7 +77,7 @@ module PipeLineDealer
         before { subject.field_type = "text" }
 
         it "encodes correctly" do
-          subject.encode(model, "Moehaha").should == "Moehaha" 
+          subject.encode(model, "Moehaha").should == "Moehaha"
         end
       end
 
@@ -91,8 +91,8 @@ module PipeLineDealer
 
       context "dropdown" do
         subject do
-          CustomField.new(attributes: { 
-            "field_type" => "dropdown", 
+          CustomField.new(attributes: {
+            "field_type" => "dropdown",
             "custom_field_label_dropdown_entries" => [{"id" => 123, "value" => "My Item"}]
           })
         end
@@ -104,8 +104,8 @@ module PipeLineDealer
 
       context "multi_select" do
         subject do
-          CustomField.new(attributes: { 
-            "field_type" => "multi_select", 
+          CustomField.new(attributes: {
+            "field_type" => "multi_select",
             "custom_field_label_dropdown_entries" => [{"id" => 123, "value" => "My Item"}]
           })
         end

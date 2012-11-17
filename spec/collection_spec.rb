@@ -22,7 +22,7 @@ describe PLD::Collection do
           },
           "entries" => [model_a.attributes]
         }
-      ] 
+      ]
     end
 
     let(:response_b) do
@@ -38,7 +38,7 @@ describe PLD::Collection do
           },
           "entries" => [model_b.attributes]
         }
-      ] 
+      ]
     end
 
     let(:model_a) { TestModel.new(collection: subject, attributes: { name: "Maarten" }) }
@@ -65,7 +65,7 @@ describe PLD::Collection do
   context "limit" do
     let(:expected_params) { ["test_models.json", { page:1, per_page: 1} ] }
 
-    let(:response) do 
+    let(:response) do
       [
         200, # Status code
         {    # 'JSON' body
@@ -73,7 +73,7 @@ describe PLD::Collection do
              "page"      => 1,
              "pages"     => 2,
              "per_page"  => 1,
-             "total"     => 2, 
+             "total"     => 2,
              "url"       => '/resource',
            },
           "entries" => [model_a.attributes]
@@ -90,7 +90,7 @@ describe PLD::Collection do
   end
 
   describe "cacheing" do
-    let(:response) do 
+    let(:response) do
       [
         200, # Status code
         {
@@ -98,7 +98,7 @@ describe PLD::Collection do
              "page"      => 1,
              "pages"     => 1,
              "per_page"  => 1,
-             "total"     => 1, 
+             "total"     => 1,
              "url"       => '/resource',
            },
           "entries" => [{}]
