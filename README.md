@@ -13,5 +13,7 @@ This can be done either by providing it as another environmental variable ```API
 or by adding a file in ```spec/api.key```  with the API key.
 
 # Thanks
-Many thanks to [<img src="http://static-1.cdnhub.nl/images/logo-springest.jpg" alt="Springest">](http://springest.com/), the company where I work, for beeing awesome.
-If you're looking for a [job (In the Netherlands)](http://www.springest.nl/weblog/vacature-ruby-on-rails-developer-in-amsterdam)? They're always interested in good developers.
+Many thanks to my employer [<img src="http://static-1.cdnhub.nl/images/logo-springest.jpg" alt="Springest">](http://springest.com/)
+
+
+They are awesome :) If you're looking for a [job (In the Netherlands)](http://www.springest.nl/weblog/vacature-ruby-on-rails-developer-in-amsterdam), check it out.
