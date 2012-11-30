@@ -16,7 +16,7 @@ Gem::Specification.new do |s|
   # Dependencies
   s.add_dependency "faraday", "~> 0.8.0"
   s.add_dependency "faraday_middleware", "~> 0.9.0"
-  s.add_dependency "multi_json", "~> 1.3.6"
+  s.add_dependency "multi_json", "~> 1.0"
   s.add_dependency "activesupport", ">= 3.2.0"
 
   s.add_development_dependency "debugger"
