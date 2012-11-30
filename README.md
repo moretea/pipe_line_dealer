@@ -1,6 +1,6 @@
 #Pipe line dealer
 
-[<img src="https://secure.travis-ci.org/moretea/pipe_line_dealer.png?travis"/>](http://travis-ci.org/moretea/pipe_line_dealer) [<img src="https://gemnasium.com/moretea/pipe_line_dealer.png?travis"/>](https://gemnasium.com/moretea/pipe_line_dealer)
+[<img src="https://secure.travis-ci.org/moretea/pipe_line_dealer.png?travis"/>](http://travis-ci.org/moretea/pipe_line_dealer) [<img src="https://gemnasium.com/moretea/pipe_line_dealer.png?travis"/>](https://gemnasium.com/moretea/pipe_line_dealer) [![Code Climate](https://codeclimate.com/badge.png)](https://codeclimate.com/github/moretea/pipe_line_dealer)
 
 Pipe line dealer is client for the [pipe line deals api](http://www.pipelinedeals.com/developers/api).
 
