@@ -20,22 +20,26 @@ module PipeLineDealer
 
       class Dropdown < Base
         def encode value
-          entry = @field.dropdown_entries.find { |entry| entry["value"] == value }
-          
-          if entry
-            return entry["id"]
-          else
-            raise Error::InvalidAttributeValue.new(@model, @field.name, value)
-          end
+          find :value, of: value, and_return: :id
         end
 
         def decode id
-          entry = @field.dropdown_entries.find { |entry| entry["id"] == id }
+          find :id, of: id, and_return: :value
+        end
+
+        protected
+
+        def find key, options
+          key        = key.to_s
+          value      = options[:of]
+          and_return = options[:and_return].to_s
+
+          entry = @field.dropdown_entries.find { |entry| entry[key] == value }
           
           if entry
-            return entry["value"]
+            return entry[and_return]
           else
-            raise Error::InvalidAttributeValue.new(@model, @field.name, id)
+            raise Error::InvalidAttributeValue.new(@model, @field.name, value)
           end
         end
       end
