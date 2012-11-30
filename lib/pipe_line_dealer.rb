@@ -21,6 +21,7 @@ module PipeLineDealer
     model/base/concern/persistance
     model/base
     model/custom_field
+    model/custom_field/coder
 
     custom_fields
     custom_field/collection

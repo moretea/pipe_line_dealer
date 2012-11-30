@@ -1,6 +1,3 @@
 - test coverage to 100%
 - specs for not saving some attributes
 - implement other models
-
-WRITE SPECS FOR:
-- lib/pipe_line_dealer/model/custom_field.rb
